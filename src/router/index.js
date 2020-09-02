@@ -1,7 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import Signup from "../views/Signup.vue";
+import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
 import GamesIndex from '../views/GamesIndex.vue';
+import DbFighterz from '../views/DbFighterz.vue';
+import DbFighterzCharacters from '../views/DbFighterzCharacters.vue';
+import DbFighterzCharactersShow from '../views/DbFighterzCharactersShow.vue';
 
 Vue.use(VueRouter);
 
@@ -16,6 +22,31 @@ const routes = [
     name: 'GamesIndex',
     component: GamesIndex
   },
+  {
+    path: '/dbfighterz',
+    name: 'dbfighterz',
+    component: DbFighterz
+  },
+  {
+    path: '/dbfighterz/characters',
+    name: 'dbfighterzcharacters',
+    component: DbFighterzCharacters
+  },
+  {
+    path: '/dbfighterz/characters/:id',
+    name: 'DbFighterzCharactersShow',
+    component: DbFighterzCharactersShow
+  },
+  { path: "/signup", 
+    name: "signup", 
+    component: Signup 
+  },
+  { path: "/login", 
+    name: "login", 
+    component: Login },
+  { path: "/logout", 
+    name: "logout", 
+    component: Logout },
   {
     path: '/about',
     name: 'About',
