@@ -2,10 +2,9 @@
   <div class="games">
     <h1>{{ message }}</h1>
     <div v-for="game in games">
-      <h2>{{ game.title }}</h2>
-      <br>
       
-      <img v-bind:src="game.game_url" width="400" height="200">
+      <br>
+      <a v-bind:href = "`/${game.name_url}/`"><img v-bind:src="game.game_url" width="400" height="200"></a>
     </div>
   </div>
 </template>
