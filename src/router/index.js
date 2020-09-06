@@ -8,6 +8,7 @@ import GamesIndex from '../views/GamesIndex.vue';
 import DbFighterz from '../views/DbFighterz.vue';
 import DbFighterzCharacters from '../views/DbFighterzCharacters.vue';
 import DbFighterzCharactersShow from '../views/DbFighterzCharactersShow.vue';
+import DbFighterzCombo from '../views/DbFighterzCombo.vue';
 
 Vue.use(VueRouter);
 
@@ -31,6 +32,11 @@ const routes = [
     path: '/dbfighterz/characters',
     name: 'dbfighterzcharacters',
     component: DbFighterzCharacters
+  },
+  {
+    path: '/dbfighterz/combo',
+    name: 'dbfighterzcombo',
+    component: DbFighterzCombo
   },
   {
     path: '/dbfighterz/characters/:id',

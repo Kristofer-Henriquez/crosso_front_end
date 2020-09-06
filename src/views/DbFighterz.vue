@@ -8,22 +8,22 @@
     <br>
     <br>
     <h1>{{ message }}</h1>
-    <h2>Combos</h2>
+    <h2><a v-bind:href="`/dbfighterz/combo`">Combos</a></h2>
     <div v-for="combo in combos">
       <video-embed v-bind:src=combo.combo_video></video-embed>
       {{ combo.notation }}
     </div>
-    <h2> Tutorials </h2>
+    <h2><a v-bind:href="`/dbfighterz/tutorial`"> Tutorials </a> </h2>
     <div v-for="tutorial in tutorials">
       <h3>{{tutorial.title}}</h3>
       <br>
       {{tutorial.body}}
     </div>
-    <h2> Tips </h2>
+    <h2> <a v-bind:href="`/dbfighterz/tip`">Tips </a></h2>
     <div v-for="tip in tips">
       {{tip.tips_list}}
     </div>
-    <h2> Tier List </h2>
+    <h2> <a v-bind:href="`/dbfighterz/tier_list`">Tier List </a></h2>
     <div v-for="tier_list in tier_lists">
     
       <img v-bind:src="tier_list.list" width="800" height="400">
