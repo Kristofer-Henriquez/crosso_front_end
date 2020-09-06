@@ -7,6 +7,8 @@
     <h2><a v-bind:href="`/dbfighterz/characters/`"> Characters </a></h2>
     <br>
     <br>
+    <h1><a v-bind:href="`/dbfighterz/random/`"> {{random}} </a></h1>
+    <br>
     <h1>{{ message }}</h1>
     <h2><a v-bind:href="`/dbfighterz/combo`">Combos</a></h2>
     <div v-for="combo in combos">
@@ -50,7 +52,8 @@ export default {
       combos: {},
       tips: [],
       tutorials: [],
-      tier_lists: []
+      tier_lists: [],
+      random: "Click here for more content"
     };
   },
   created: function() {

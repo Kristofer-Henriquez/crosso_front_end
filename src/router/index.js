@@ -9,6 +9,7 @@ import DbFighterz from '../views/DbFighterz.vue';
 import DbFighterzCharacters from '../views/DbFighterzCharacters.vue';
 import DbFighterzCharactersShow from '../views/DbFighterzCharactersShow.vue';
 import DbFighterzCombo from '../views/DbFighterzCombo.vue';
+import DbFighterzRandom from '../views/DbFighterzRandom.vue';
 
 Vue.use(VueRouter);
 
@@ -42,6 +43,11 @@ const routes = [
     path: '/dbfighterz/characters/:id',
     name: 'DbFighterzCharactersShow',
     component: DbFighterzCharactersShow
+  },
+  {
+    path: '/dbfighterz/random',
+    name: 'DbFighterzRandom',
+    component: DbFighterzRandom
   },
   { path: "/signup", 
     name: "signup", 
