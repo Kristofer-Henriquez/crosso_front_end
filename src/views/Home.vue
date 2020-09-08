@@ -1,16 +1,35 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
-    <input type="text" v-model="searchTerm" list="titles">
-    <datalist id="titles">
-      <option v-for="universal in universals">{{universal.title}}</option>
-    </datalist>
+    <!-- <h1>{{ message }}</h1> -->
+    
     <!-- <div v-for="universal in universals"> -->
-    <div v-for="universal in filterBy(universals, searchTerm, 'title')">
-      {{universal.title}}
-      {{universal.body}}
+      <div class="col-12">
+											<header class="first major">
+												<h2>Get your fundamentals first!</h2>
+												<p> <strong></strong> </p>
+											</header>
+										</div>
+                    <input type="text" v-model="searchTerm" list="titles">
+                    <datalist id="titles">
+                      <option v-for="universal in universals">{{universal.title}}</option>
+                      <br>
+                    </datalist>
+                    <hr>
+                    <hr>
+                    <br>
+                    <div class="col-4 col-12-medium">
+											<section>
+												<header v-for="universal in filterBy(universals, searchTerm, 'title')">
+													<h3>{{universal.title}}</h3>
+													<p>{{universal.body}}</p>
+												</header>
+											</section>
+										</div>
+    <!-- <div v-for="universal in filterBy(universals, searchTerm, 'title')"> -->
+      <!-- {{universal.title}} -->
+      <!-- {{universal.body}} -->
     </div>
-  </div>
+
 </template>
 
 <style>

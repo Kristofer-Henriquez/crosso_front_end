@@ -1,9 +1,11 @@
 <template>
   <div class="DbFighterzCombo">
-    <h1>{{ message }}</h1>
+    <!-- <h1>{{ message }}</h1> -->
+    <h1>Create a new combo video </h1>
+    <h1>using your youtube channel!</h1>
 
     <form v-on:submit.prevent="submit()">
-      <h1>Create Video</h1>
+      
       <ul>
         <li class="text-danger" v-for="error in errors">{{ error }}</li>
       </ul>
